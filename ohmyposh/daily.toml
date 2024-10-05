@@ -1,0 +1,67 @@
+#:schema https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json
+ 
+version = 2
+final_space = true
+ 
+[[blocks]]
+  type = 'prompt'
+  alignment = 'left'
+ 
+  [[blocks.segments]]
+    type = 'session'
+    style = 'plain'
+    foreground = 'cyan'
+    template = '┏[{{ .UserName }}]'
+ 
+  [[blocks.segments]]
+    type = 'git'
+    style = 'plain'
+    foreground = 'magenta'
+    template = '[<white>{{ .UpstreamIcon }}</>{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} <white></> {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} <white></> {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} <white></> {{ .StashCount }}{{ end }}]'
+ 
+    [blocks.segments.properties]
+      fetch_stash_count = true
+      fetch_status = true
+      fetch_upstream_icon = true
+ 
+  [[blocks.segments]]
+    type = 'path'
+    style = 'plain'
+    foreground = 'cyan'
+    template = '[{{ .Path }}</>]'
+ 
+    [blocks.segments.properties]
+      style = 'full'
+ 
+[[blocks]]
+  type = 'prompt'
+  alignment = 'right'
+ 
+  [[blocks.segments]]
+    type = 'executiontime'
+    style = 'diamond'
+    foreground = 'lightRed'
+    template = '[<white></> {{ .FormattedMs }}s]'
+ 
+    [blocks.segments.properties]
+      style = 'dallas'
+      threshold = 5.0
+ 
+[[blocks]]
+  type = 'prompt'
+  alignment = 'left'
+  newline = true
+ 
+  [[blocks.segments]]
+    type = 'text'
+    style = 'plain'
+    foreground = 'cyan'
+    template = '┗' 
+ 
+[transient_prompt]
+  foreground = 'cyan'
+  template = '❯ '
+ 
+[secondary_prompt]
+  foreground = 'cyan'
+  template = '❯❯ '

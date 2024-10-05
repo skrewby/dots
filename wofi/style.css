@@ -1,0 +1,15 @@
+window {
+    border: none;
+    background-color: rgba(26, 27, 38, 0.5);
+    color: #a9b1d6;
+    border-radius: 10;
+}
+
+#entry:selected {
+    background-color: #28344a;
+}
+
+#input {
+    background-color: rgba(26, 27, 38, 1);
+    border-color: #3d59a1;
+}
