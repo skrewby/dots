@@ -21,6 +21,7 @@ require("lazy").setup({
 	require("plugins/lint"),
 	require("plugins/lspconfig"),
 	require("plugins/lualine"),
+	require("plugins/markdown-preview"),
 	require("plugins/mini"),
 	require("plugins/repeat"),
 	require("plugins/surround"),
