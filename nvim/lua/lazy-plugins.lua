@@ -23,6 +23,7 @@ require("lazy").setup({
 	require("plugins/lualine"),
 	require("plugins/markdown-preview"),
 	require("plugins/mini"),
+	require("plugins/obsidian"),
 	require("plugins/repeat"),
 	require("plugins/surround"),
 	require("plugins/telescope"),

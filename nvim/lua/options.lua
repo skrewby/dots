@@ -65,4 +65,7 @@ vim.opt.scrolloff = 10
 -- Allow the Templ LSP to work
 vim.filetype.add({ extension = { templ = "templ" } })
 
+-- Conceal level required for Obsidian
+vim.opt_local.conceallevel = 2
+
 -- vim: ts=2 sts=2 sw=2 et
