@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-sudo pacman --noconfirm -S zsh waybar tmux alacritty unzip base-devel cmake ninja curl hyprlock hyprpaper sof-firmware less
+sudo pacman --noconfirm -S zsh waybar tmux alacritty unzip base-devel cmake ninja curl hyprlock hyprpaper sof-firmware less yazi
 
 # Oh My Posh
 curl -s https://ohmyposh.dev/install.sh | bash -s
