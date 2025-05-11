@@ -44,14 +44,4 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 	end,
 })
 
--- Obsidian Keybinds
-vim.keymap.set("n", "<leader>ot", "<cmd>ObsidianTemplate<CR>", { desc = "[T]emplate" })
-vim.keymap.set("n", "<leader>oo", "<cmd>ObsidianOpen<CR>", { desc = "[O]pen in Obsidian App" })
-vim.keymap.set("n", "<leader>ob", "<cmd>ObsidianBacklinks<CR>", { desc = "[B]acklinks" })
-vim.keymap.set("n", "<leader>ol", "<cmd>ObsidianLinks<CR>", { desc = "[L]inks" })
-vim.keymap.set("n", "<leader>on", "<cmd>ObsidianNew<CR>", { desc = "[N]ew Note" })
-vim.keymap.set("n", "<leader>os", "<cmd>ObsidianSearch<CR>", { desc = "[S]earch Obsidian (grep)" })
-vim.keymap.set("n", "<leader>oq", "<cmd>ObsidianQuickSwitch<CR>", { desc = "[Q]uick Switch" })
-vim.keymap.set("n", "<leader>od", "<cmd>ObsidianToday<CR>", { desc = "[D]aily Note" })
-
 -- vim: ts=2 sts=2 sw=2 et
