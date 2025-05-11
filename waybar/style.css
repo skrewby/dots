@@ -1,92 +1,101 @@
+@import "mocha.css";
+
 * {
-    border: none;
-    border-radius: 20;
-    font-family: "Hack Nerd Font";
-    font-size: 13px;
-    min-height: 0;
+    font-family: "Hack Nerd Font Propo", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    transition: background-color .3s ease-out;
 }
 
 window#waybar {
-    background: rgba(26,27,38,0.8);
-    color: #A9B1D6;
+    background: transparent;
+    color: @text;
+    font-family: 
+        Hack Nerd Font Propo;
+    transition: background-color .5s;
 }
 
-#window {
-    font-weight: bold;
-    font-family: "Ubuntu";
+.modules-left,
+.modules-center,
+.modules-right
+{
+    background: @base;
+    margin: 5px 10px;
+    padding: 0 5px;
+    border-radius: 15px;
+}
+.modules-left {
+    padding: 0;
+}
+.modules-center {
+    padding: 0 10px;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#wireplumber,
+#custom-media,
+#tray,
+#mode,
+#idle_inhibitor,
+#scratchpad,
+#power-profiles-daemon,
+#language,
+#mpd {
+    padding: 0 10px;
+    border-radius: 15px;
+}
+
+#clock:hover,
+#battery:hover,
+#cpu:hover,
+#memory:hover,
+#disk:hover,
+#temperature:hover,
+#backlight:hover,
+#network:hover,
+#pulseaudio:hover,
+#wireplumber:hover,
+#custom-media:hover,
+#tray:hover,
+#mode:hover,
+#idle_inhibitor:hover,
+#scratchpad:hover,
+#power-profiles-daemon:hover,
+#language:hover,
+#mpd:hover {
+    color: @lavender;
 }
 
 #workspaces button {
-    background: transparent;
-    color: #A9B1D6;
+  background: transparent;
+  font-family:
+    Hack Nerd Font Propo;
+  font-weight: 900;
+  font-size: 13pt;
+  color: @text;
+  border:none;
+  border-radius: 15px;
 }
 
 #workspaces button.active {
-    color: #FFFFFF;
+    color: @blue;
 }
 
-#mode {
-    background: #64727D;
-    border-bottom: 3px solid white;
+#workspaces button:hover {
+  color: @blue;
+  box-shadow: none;
 }
 
-#clock, #battery, #cpu, #memory, #network, #pulseaudio, #custom-spotify, #tray, #mode {
-    padding: 0 3px;
-    margin: 0 2px;
-}
-
-#clock {
-    font-weight: bold;
-}
-
-#battery {
-}
-
-#battery icon {
-    color: red;
-}
-
-#battery.charging {
-}
-
-@keyframes blink {
-    to {
-        background-color: #ffffff;
-        color: black;
-    }
-}
-
-#battery.warning:not(.charging) {
-    color: white;
-    animation-name: blink;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-
-#cpu {
-}
-
-#memory {
-}
-
-#network {
-}
-
-#network.disconnected {
-    background: #f53c3c;
-}
-
-#pulseaudio {
-}
-
-#pulseaudio.muted {
-}
-
-#custom-spotify {
-    color: rgb(102, 220, 105);
-}
-
-#tray {
+.custom-spotify {
+    padding: 0 10px;
+    margin: 0 4px;
+    background-color: transparent;
+    color: @text;
 }

@@ -1,0 +1,61 @@
+[user]
+    name = skrewby
+    email = 33297928+skrewby@users.noreply.github.com
+
+[core]
+    compression = 9
+    whitespace = error
+    preloadindex = true
+
+[url "git@github.com:skrewby/"]
+    insteadOf = "skrewby:"
+
+[url "git@github.com:"]
+    insteadOf = "gh:"
+
+[status]
+    branch = true
+    showStash = true
+
+[diff]
+    context = 3
+    renames = copies
+    interHunkContext = 10
+
+[pager]
+    diff = diff-so-fancy | less
+
+[interactive]
+    diffFilter = diff-so-fancy --patch
+    singlekey = true
+
+[push]
+    autoSetupRemote = true
+    default = current
+
+[pull]
+    default = current
+    rebase = true
+
+[rebase]
+    autoStash = true
+
+[log]
+    abbrevCommit = true
+    graphColors = blue,yellow,cyan,magenta,green,red
+
+[color "decorate"]
+    HEAD = red
+    branch = blue
+    tag = yellow
+    remoteBranch = magenta
+
+[branch]
+    sort = -commiterdate
+
+[tag]
+    sort = -taggerdate
+
+[pager]
+    branch = false
+    tag = false
