@@ -7,6 +7,12 @@ require("lazy").setup({
 	-- keys can be used to configure plugin behavior/loading/etc.
 	--
 	-- Use `opts = {}` to force a plugin to be loaded.
+	{
+		"LazyVim/LazyVim",
+		opts = {
+			colorscheme = "catppuccin",
+		},
+	},
 
 	-- Modular approach: using `require 'path/name'` will
 	-- include a plugin definition from file lua/path/name.lua
@@ -27,7 +33,7 @@ require("lazy").setup({
 	require("plugins/telescope"),
 	require("plugins/tmux-navigator"),
 	require("plugins/todo-comments"),
-	require("plugins/tokyonight"),
+	require("plugins/catppuccin"),
 	require("plugins/treesitter"),
 	require("plugins/which-key"),
 	require("plugins/yazi"),
