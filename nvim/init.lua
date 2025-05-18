@@ -16,3 +16,5 @@ require("lazy-bootstrap")
 
 -- Install plugins
 require("lazy-plugins")
+
+vim.cmd.colorscheme("catppuccin")
