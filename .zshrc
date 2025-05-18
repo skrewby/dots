@@ -1,6 +1,7 @@
 export PATH="$PATH:$HOME/bin"
 export PATH="$PATH:$HOME/bin/golang/bin"
 export PATH="$PATH:$HOME/.local/bin"
+export PATH="$PATH:$HOME/.local/bin/arm-gnu/bin"
 export PATH="$PATH:/usr/local/go/bin"
 export GOPATH="$HOME/bin/golang"
 export GPG_TTY=$(tty)
