@@ -1,9 +1,4 @@
-export PATH="$PATH:$HOME/bin"
-export PATH="$PATH:$HOME/bin/golang/bin"
-export PATH="$PATH:$HOME/.local/bin"
-export PATH="$PATH:$HOME/.local/bin/arm-gnu/bin"
-export PATH="$PATH:/usr/local/go/bin"
-export GOPATH="$HOME/bin/golang"
+source ~/.zshrc_paths
 export GPG_TTY=$(tty)
 
 eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/daily.toml)"

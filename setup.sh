@@ -15,6 +15,7 @@ ln -s ~/dots/waybar ~/.config/waybar
 ln -s ~/dots/wofi ~/.config/wofi
 ln -s ~/dots/.tmux.conf ~/.tmux.conf
 ln -s ~/dots/.zshrc ~/.zshrc
+ln -s ~/dots/.zshrc_paths ~/.zshrc_paths
 ln -s ~/dots/alacritty ~/.config/alacritty
 ln -s ~/dots/git ~/.config/git
 
