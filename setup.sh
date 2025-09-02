@@ -8,16 +8,16 @@ curl -s https://ohmyposh.dev/install.sh | bash -s
 # Tmux plugins
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
-ln -s ~/dots/hypr ~/.config/hypr
-ln -s ~/dots/ohmyposh ~/.config/ohmyposh
-ln -s ~/dots/nvim ~/.config/nvim
-ln -s ~/dots/waybar ~/.config/waybar
-ln -s ~/dots/wofi ~/.config/wofi
-ln -s ~/dots/.tmux.conf ~/.tmux.conf
-ln -s ~/dots/.zshrc ~/.zshrc
-ln -s ~/dots/.zshrc_paths ~/.zshrc_paths
-ln -s ~/dots/alacritty ~/.config/alacritty
-ln -s ~/dots/git ~/.config/git
+ln -s ${PWD}/hypr ~/.config/hypr
+ln -s ${PWD}/ohmyposh ~/.config/ohmyposh
+ln -s ${PWD}/nvim ~/.config/nvim
+ln -s ${PWD}/waybar ~/.config/waybar
+ln -s ${PWD}/wofi ~/.config/wofi
+ln -s ${PWD}/.tmux.conf ~/.tmux.conf
+ln -s ${PWD}/.zshrc ~/.zshrc
+ln -s ${PWD}/.zshrc_paths ~/.zshrc_paths
+ln -s ${PWD}/alacritty ~/.config/alacritty
+ln -s ${PWD}/git ~/.config/git
 
 chsh -s /usr/bin/zsh
 
