@@ -15,7 +15,6 @@ ln -s ${PWD}/waybar ~/.config/waybar
 ln -s ${PWD}/wofi ~/.config/wofi
 ln -s ${PWD}/.tmux.conf ~/.tmux.conf
 ln -s ${PWD}/.zshrc ~/.zshrc
-ln -s ${PWD}/.zshrc_paths ~/.zshrc_paths
 ln -s ${PWD}/alacritty ~/.config/alacritty
 ln -s ${PWD}/git ~/.config/git
 
