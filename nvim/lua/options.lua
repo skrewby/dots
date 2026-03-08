@@ -69,5 +69,5 @@ vim.filetype.add({ extension = { templ = "templ" } })
 vim.opt_local.conceallevel = 2
 
 -- Avoid log file growing to very large amounts
-vim.lsp.set_log_level("ERROR")
+vim.lsp.log.set_level("ERROR")
 -- vim: ts=2 sts=2 sw=2 et
