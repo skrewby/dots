@@ -7,6 +7,7 @@ alias vim=nvim
 alias ..="cd .."
 alias ...="cd ../.."
 alias ls=lsd
+alias cat=bat
 
 alias gs="git status --short"
 alias gd="git diff --output-indicator-new=' ' --output-indicator-old=' '"
