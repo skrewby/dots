@@ -1,0 +1,15 @@
+// ────────────── Output Configuration ──────────────
+// You can run `niri msg outputs` to get the correct name for your displays.
+// https://github.com/YaLTeR/niri/wiki/Configuration:-Outputs
+
+output "DP-1" {
+    position x=0 y=0
+}
+
+output "DP-2" {
+    position x=2560 y=0
+}
+
+output "DP-3" {
+    position x=5120 y=0
+}

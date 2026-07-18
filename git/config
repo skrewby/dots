@@ -7,11 +7,8 @@
     whitespace = error
     preloadindex = true
 
-[url "git@github.com:skrewby/"]
-    insteadOf = "skrewby:"
-
-[url "git@github.com:"]
-    insteadOf = "gh:"
+[init]
+    defaultBranch = main
 
 [status]
     branch = true
